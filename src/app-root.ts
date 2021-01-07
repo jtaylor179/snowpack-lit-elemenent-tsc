@@ -1,4 +1,5 @@
 import { customElement, property, LitElement, html, css } from 'lit-element';
+import './simple-greeting';
 
 @customElement('app-root')
 export class AppRoot extends LitElement {
@@ -38,6 +39,7 @@ export class AppRoot extends LitElement {
         >
           ${this.message}
         </a>
+        <simple-greeting>Hello</simple-greeting>
       </div>
     `;
   }
